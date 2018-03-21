@@ -1,0 +1,135 @@
+Toutorial#( What you should know before watching this course)
+>> Javascript      >>ECMAScript 6 (ES6)    >>npm
+
+Toutorial#(004 What is React_)
+Its library of javascript and react-native is used for mobile applications.
+
+Toutorial#(005 Setting up Chrome tools for React)
+React-Detector>>>Website of react and it becomes blue.
+React Developer Tools-> it tells about the react components used in a website.    
+
+Toutorial #(006 Inspecting React sites)
+  Developer tools shortcut: ctrl+opt+j or F12
+
+Toutorial#(007 Efficient rendering with React)
+
+The DOM: Document object model(Sutructure of HTML elements);
+DOM Diffing: More efficient in making changes of when page reload,it compares the current page with 
+new changing request and only make changes which are to be updated.
+ 
+ Tutorial#(Pure React)
+       created an element and displayed it.
+
+  Tutorial#( Babel inline transpiling)
+    To Compile JSX we use babel.(JSX is like HTML syntax written in Javascript Code)
+    so if it does not supported by browser directly then we use Babel.
+
+    Tutorial#( Babel static transpiling with babel-cli)
+    
+Creating a new Project
+>>>     npm init
+>>>     npm install --save-dev babel-cli
+or for global 
+>>>     npm install -g babel-cli
+
+>>>     npm install --save-dev babel-preset-latest babel-preset-react babel-preset-stage-0
+
+>>>     babel ./src/index.js --out-file ./dist/bundle.js
+ Tutorial#(Building with webpack)
+  Webpack makes html,javascript,css as a single file and makes it as a single request.
+  It all happens before puttingout our website live or before producing our file.
+
+  devserver is like httpster but it loads the changes automatically. 
+  
+Installing webpack:
+
+>>>>    npm install webpack babel-loader webpack-dev-server --save-dev
+
+The CLI moved into a separate package: webpack-cli.
+Please install 'webpack-cli' in addition to webpack itself to use the CLI.
+-> When using npm: npm install webpack-cli -D
+Try Following:
+
+> Install Webpack 2 => npm install webpack@2
+> Output file path should be absolute
+> "loaders" keyword is replaced by "rules" keyword
+> Remove "query" and "persist" sectio n
+> Remove Public path
+
+
+To run webpack:
+webpack --mode development
+
+To run webpack continuously (Keep watching):
+webpack --mode development -w
+
+Toturial#( Loading JSON with webpack)
+export const hello= ("export" so that content stored in hello can be used in other files.)
+
+Toturial#(014 Adding CSS to webpack build)
+https://stackoverflow.com/questions/46400443/what-is-the-difference-between-css-and-scss
+ Our webpack will transpile our "CSS" file into "SCSS" file.
+ these loaders will help in transpiling css.
+
+ Toturial#(015 Planning an ActivityCounter)
+ U can choose data points of your desired field,
+ there will be 
+ location,
+ date,
+ two boolean variables
+
+ Example:  location, lahore
+           date, 31 march 2017
+           normal day,
+           hot day
+ Toturial#(016 Creating components with createClass())
+Multiple components will be created and purpose of each component will be to display data.
+The <span> tag provides a way to add a hook to a part of a text or a part of a document.
+component will be created using react.createclass 
+npm install create-react-class --save -dev
+
+Toturial#(017 Adding component properties)
+<span>{this.propTypes.total}</span>
+                    <span>5 days</span>
+if we are using this.proptypes.total then no need of hardcode 5,
+PropTypes exports a range of validators that can be used to make sure 
+the data you receive is valid.  For performance reasons, propTypes is 
+only checked in development mode.
+
+Toturial#(018 Adding component methods)
+
+      We will create some methods for components and thses methods will be incapsulated in components.
+      Methods are functions stored as object properties.
+Toturial#(019 Creating components with ES6 class syntax)
+ES6 describes that how Javascript should be implemented for browsers.
+
+Changed our class as ES6 class, only make changes in syntax..
+To be more specific in syntax we use Important {component} from
+react instead of import React from 'react'.
+
+Creating stateless functional components
+        Intro: React .14 introduced a simpler way to define components called stateless functional components.
+         These components use plain JavaScript functions. Here’s the before and after in ES6:  
+
+   So we will be creating a component using a function.
+   Note: For Allighment of the code use "shift+tab".
+   thses stateless function just take the properties as input
+    and displays the data.
+
+    export const SkiDayCount= (props) =>(
+
+    So we can easily use this function in current or any other component.
+Toutorial#(021 Adding react-icons)
+Explore more on react icons website,,,
+ 
+ Toturial#(022 Composing components)
+Purpose will be to build a skidy table.
+
+Toturial#(023 Displaying child components)
+Skiday list and skiday roes were our child process.
+The <tr> tag defines a row in an HTML table
+The <td> tag defines a standard cell in an HTML table.
+The <th> tag defines a header cell in an HTML table.
+The <tbody> tag is used to group the body content in an HTML table.
+Whenever we are rendering a childeren in aray we have to supply a key value
+so that react can know which things to be update..
