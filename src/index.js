@@ -25,6 +25,12 @@ render(
                       powdr:false,
                       backcountry:true
        },
+       {
+                      resort:"Islamabad",
+                      date: new Date("7/12/2018"),
+                      powdr:false,
+                      backcountry:true
+       }
     ]
 }/>
  , document.getElementById('react-container')) 
